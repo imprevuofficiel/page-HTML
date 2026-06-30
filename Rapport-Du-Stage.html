@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapport de stage</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg, #74b9ff, #dfe6e9);
+            color:#222;
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            transition:0.4s;
+        }
+
+        .container{
+            width:80%;
+            max-width:900px;
+            background:white;
+            padding:40px;
+            border-radius:20px;
+            box-shadow:0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        h1{
+            color:#1565c0;
+            margin-bottom:20px;
+        }
+
+        h2{
+            color:#444;
+            margin-bottom:15px;
+        }
+
+        p{
+            line-height:1.8;
+        }
+
+        button{
+            position:fixed;
+            top:20px;
+            right:20px;
+            padding:10px 20px;
+            border:none;
+            border-radius:10px;
+            background:#1565c0;
+            color:white;
+            cursor:pointer;
+            font-size:16px;
+        }
+
+        button:hover{
+            background:#0d47a1;
+        }
+
+
+        body.dark{
+            background:linear-gradient(135deg,#1e272e,#2d3436);
+            color:white;
+        }
+
+        body.dark .container{
+            background:#2f3640;
+            color:white;
+        }
+
+        body.dark h1{
+            color:#74b9ff;
+        }
+
+        body.dark h2{
+            color:#dfe6e9;
+        }
+    </style>
+</head>
+
+<body>
+
+<button onclick="darkMode()">🌙 Mode sombre</button>
+
+<div class="container">
+
+    <h1>Rapport du mardi 30 juin 2026 à </h1>
+
+    <h2>Compte rendu</h2>
+
+    <p>
+     On a commencer 
+    </p>
+
+</div>
+
+<script>
+function darkMode(){
+    document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
